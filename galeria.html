@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galeria | Botecos FC</title>
+  <link rel="stylesheet" href="galeria.css">
+</head>
+<body>
+  <header>
+    <h1>Galeria de Fotos</h1>
+    <nav>
+      <a href="Menu.html">Início</a>
+      <a href="calendario.html">Calendário</a>
+      <a href="galeria.html">Galeria</a>
+      <a href="equipa.html">Equipa</a>
+      <a href="estatisticas.html">Estatísticas</a>
+      <a href="faq.html">FAQ</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="galeria">
+      <div class="foto" onclick="abrirModal(this)">
+        <img src="Fotos/BOTECO.jpg" alt="Foto do Botecos FC">
+      </div>
+      <div class="foto" onclick="abrirModal(this)">
+        <img src="https://images.unsplash.com/photo-1555685811-0e5b3478c82c" alt="Foto do Botecos FC">
+      </div>
+      <div class="foto" onclick="abrirModal(this)">
+        <img src="https://images.unsplash.com/photo-1572763170350-df8e93cc0296" alt="Foto do Botecos FC">
+      </div>
+    </section>
+
+    <!-- Modal para foto em tela cheia -->
+    <div class="modal" id="modal" onclick="fecharModal()">
+      <img id="modal-imagem" src="" alt="Foto ampliada">
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Botecos FC</p>
+  </footer>
+
+  <script src="galeria.js"></script>
+</body>
+</html>

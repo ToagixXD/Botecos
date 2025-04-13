@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Painel Admin | Botecos FC</title>
+  <link rel="stylesheet" href="admin-dashboard.css">
+</head>
+<body>
+  <header>
+    <h1>Painel de Administração</h1>
+    <nav>
+      <a href="Menu.html">Início</a>
+      <a href="admin.html">Admin2</a>
+      <a href="faq.html">FAQ</a>
+      <a href="login.html">Sair</a>
+    </nav>
+  </header>
+  <section>
+    <h2>Jogadores</h2>
+    <div id="jogadores-lista"></div>
+  </section>
+  <main>
+    <section>
+      <h2>Adicionar Jogador</h2>
+      <form id="add-jogador-form">
+        <input type="text" id="nome-jogador" placeholder="Nome do jogador" required>
+        <input type="text" id="posicao-jogador" placeholder="Posição" required>
+        <button type="submit">Adicionar Jogador</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>Adicionar Jogo</h2>
+      <form id="add-jogo-form">
+        <input type="text" id="adversario" placeholder="Adversário" required>
+        <input type="date" id="data-jogo" required>
+        <input type="text" id="local" placeholder="Local" required>
+        <button type="submit">Adicionar Jogo</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>Alterar Estatísticas</h2>
+      <form id="update-estatisticas-form">
+        <input type="text" id="nome-estatistica" placeholder="Nome do jogador" required>
+        <input type="number" id="gols" placeholder="Gols" required>
+        <input type="number" id="assistencias" placeholder="Assistências" required>
+        <button type="submit">Alterar Estatísticas</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Botecos FC</p>
+  </footer>
+
+  <script src="admin-dashboard.js"></script>
+</body>
+</html>

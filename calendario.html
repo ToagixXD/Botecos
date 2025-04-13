@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calendário | Botecos FC</title>
+  <link rel="stylesheet" href="calendario.css">
+</head>
+<body>
+  <header>
+    <h1>Calendário de Jogos</h1>
+    <nav>
+      <a href="Menu.html">Início</a>
+      <a href="calendario.html">Calendário</a>
+      <a href="galeria.html">Galeria</a>
+      <a href="equipa.html">Equipa</a>
+      <a href="estatisticas.html">Estatísticas</a>
+      <a href="faq.html">FAQ</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="jogos">
+        <div class="jogo" onclick="mostrarDetalhes(this)"></div>
+        <h2>Próximos Jogos do Botecos FC</h2>
+        <div id="lista-jogos"></div>
+        <div class="detalhes">
+            <p>Campo da Ribeira, Lisboa</p>
+            <p>Amigável</p>
+      </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Botecos FC</p>
+  </footer>
+
+  <script src="calendario.js"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+:root {
+    --laranja: #ff6600;
+    --laranja-claro: #ffa366;
+    --branco: #fff;
+    --cinza: #f2f2f2;
+    --texto: #333;
+  }
+  
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: var(--cinza);
+    color: var(--texto);
+  }
+  
+  header {
+    background: var(--laranja);
+    color: var(--branco);
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  nav {
+    margin-top: 1rem;
+  }
+  
+  nav a {
+    color: var(--branco);
+    text-decoration: none;
+    margin: 0 1rem;
+    font-weight: bold;
+  }
+  
+  .jogos {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+  
+  .jogo {
+    background: var(--branco);
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-left: 5px solid var(--laranja);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .jogo:hover {
+    background: var(--laranja-claro);
+  }
+  
+  .detalhes {
+    display: none;
+    margin-top: 0.5rem;
+    font-style: italic;
+  }
+  
+  footer {
+    background: var(--laranja);
+    color: var(--branco);
+    text-align: center;
+    padding: 1rem;
+    margin-top: 3rem;
+  }

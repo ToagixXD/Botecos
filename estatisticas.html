@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estatísticas | Botecos FC</title>
+  <link rel="stylesheet" href="estatisticas.css">
+</head>
+<body>
+  <header>
+    <h1>Estatísticas dos Jogadores</h1>
+    <nav>
+      <a href="Menu.html">Início</a>
+      <a href="calendario.html">Calendário</a>
+      <a href="galeria.html">Galeria</a>
+      <a href="equipa.html">Equipa</a>
+      <a href="faq.html">FAQ</a>
+    </nav>
+  </header>
+
+  <main>
+    <div id="filtros">
+        <label for="filtro-gols">Filtrar por Gols: </label>
+        <input type="number" id="filtro-gols" placeholder="Min. Gols" />
+    
+        <label for="filtro-assistencias">Filtrar por Assistências: </label>
+        <input type="number" id="filtro-assistencias" placeholder="Min. Assistências" />
+      </div>
+    
+      <div id="lista-estatisticas">
+        <!-- Aqui vão ser inseridas as estatísticas dos jogadores -->
+      </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Botecos FC</p>
+  </footer>
+
+  <script src="estatisticas.js"></script>
+</body>
+</html>

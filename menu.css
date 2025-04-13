@@ -1,0 +1,108 @@
+
+:root {
+  --laranja: #ff6600;
+  --laranja-claro: #ffa366;
+  --branco: #fff;
+  --cinza-claro: #f9f9f9;
+  --cinza-texto: #333;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--cinza-claro);
+  color: var(--cinza-texto);
+  line-height: 1.6;
+}
+
+header {
+  background: linear-gradient(90deg, var(--laranja), var(--laranja-claro));
+  color: var(--branco);
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  background: var(--branco);
+  padding: 1rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  gap: 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--laranja);
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: var(--laranja-claro);
+}
+
+.hero {
+  background: url('https://images.unsplash.com/photo-1599058917211-d5195f58e57c') center/cover no-repeat;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.5);
+}
+
+.hero h1 {
+  position: relative;
+  color: var(--branco);
+  font-size: 3rem;
+  background: rgba(255, 102, 0, 0.85);
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  animation: fadeInUp 1s ease;
+}
+
+@keyframes fadeInUp {
+  from { transform: translateY(30px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.content {
+  padding: 3rem 2rem;
+  max-width: 1000px;
+  margin: auto;
+  background: var(--branco);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  margin-top: 2rem;
+}
+
+.content h2 {
+  color: var(--laranja);
+  margin-bottom: 1rem;
+}
+
+footer {
+  background: var(--laranja);
+  color: var(--branco);
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 3rem;
+  font-weight: 500;
+}

@@ -1,0 +1,80 @@
+:root {
+    --laranja: #ff6600;
+    --laranja-claro: #ffa366;
+    --branco: #fff;
+    --cinza: #f2f2f2;
+    --texto: #333;
+  }
+  
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: var(--cinza);
+    color: var(--texto);
+  }
+  
+  header {
+    background: var(--laranja);
+    color: var(--branco);
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  nav {
+    margin-top: 1rem;
+  }
+  
+  nav a {
+    color: var(--branco);
+    text-decoration: none;
+    margin: 0 1rem;
+    font-weight: bold;
+  }
+  
+  .equipa {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .jogador {
+    background: var(--branco);
+    text-align: center;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    cursor: pointer;
+  }
+  
+  .jogador:hover {
+    transform: translateY(-10px);
+  }
+  
+  .jogador img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+  }
+  
+  .jogador h3 {
+    margin: 1rem 0;
+  }
+  
+  .detalhes {
+    display: none;
+    font-style: italic;
+    margin-top: 0.5rem;
+  }
+  
+  footer {
+    background: var(--laranja);
+    color: var(--branco);
+    text-align: center;
+    padding: 1rem;
+    margin-top: 3rem;
+  }
+  
